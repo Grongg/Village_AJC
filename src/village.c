@@ -2,15 +2,17 @@
 
 void createVillage(S_Village *village)
 {
-    S_scierie scierie;
-    S_mine mine;
-    S_resVillage resVillage;
-    createDefaultRessources(&resVillage);
-    createDefaultScierie(&scierie);
-    createDefaultMine(&mine);
+    S_scierie* scierie = malloc(sizeof(S_scierie));
+    S_mine* mine = malloc(sizeof(S_mine));
+    S_mine* raffinerie = NULL;
+    S_mine* caserne = NULL;
+    S_resVillage* resVillage = malloc(sizeof(S_resVillage));
+    createDefaultRessources(resVillage);
+    createDefaultScierie(scierie);
+    createDefaultMine(mine);
     village->jour = 0;
-    village->scierie[0] = scierie;
-    village->mine[0] = mine;
+    village->scierie = scierie;
+    village->mine = mine;
     village->nbScirie++;
     village->nbMine++;
 }
