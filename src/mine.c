@@ -1,4 +1,12 @@
-# include "mine.h"
+# include "village.h"
+
+void createDefaultMine(S_mine *mine)
+{
+    mine->villageoisMin = 3;
+    mine->coutOr = 100;
+    mine->coutBois = 20;
+    mine->productionOr = 50;
+}
 
 void displayDefaultMine(S_mine *mine)
 {
@@ -13,22 +21,9 @@ void displayDefaultMine(S_mine *mine)
     printf("Production en or par jour : %d\n", mine->productionOr);
 }
 
-int productionMine(int or)
+void collectMine(S_resVillage *ressource, S_mine *mine)
 {
-    return or + 50;
-}
-
-void createDefaultMine(S_mine *mine)
-{
-    mine->villageoisMin = 3;
-    mine->coutOr = 100;
-    mine->coutBois = 20;
-    mine->productionOr = 50;
-}
-
-int prodOr(int orActuel)
-{
-    // return orActuel = orActuel + mine->productionOr;
+    ressource->orActuel = ressource->orActuel + mine->productionOr;
 }
 
 // int main()
@@ -41,6 +36,19 @@ int prodOr(int orActuel)
 //     or = prodOr(or, jourmax);
 //     displayDefaultMine(mine); 
 //     printf("Production en or au bout de %d jours : %d\n", jourmax, or);   
+//     free(mine);
+//     return 0;
+// }
+
+// int main()
+// {
+//     S_resVillage *ressource = malloc(sizeof(S_resVillage));
+//     S_mine *mine = malloc(sizeof(S_mine));
+//     ressource->orActuel = 100;
+//     createDefaultMine(mine);
+//     collectMine(ressource, mine);
+//     printf("ressource or actuel : %d\n", ressource->orActuel);
+//     free(ressource);
 //     free(mine);
 //     return 0;
 // }
