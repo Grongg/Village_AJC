@@ -23,3 +23,31 @@ void createVillage(S_Village *village)
     village->hdv->villageois = 10;
 
 }
+
+bool removeVilFromMine(S_Village *Village)
+{
+    for (int i = Village->nbMine - 1; i >= 0; i--)
+    {
+        if (Village->mine[i].villageois > 0)
+        {
+            Village->mine[i].villageois--;
+            Village->hdv->villageois++;
+            return true;
+        }
+    }
+    return false;
+}
+
+bool addVilToMine(S_Village *Village)
+{
+    for (int i = 0; i != Village->nbMine; i++)
+    {
+        if (Village->mine[i].villageois < Village->mine[i].villageoisMin)
+        {
+            Village->mine[i].villageois++;
+            Village->hdv->villageois--;
+            return true;
+        }
+    }
+    return false;
+}

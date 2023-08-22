@@ -2,6 +2,7 @@
 #define VILLAGE_H
 # include <stdio.h>
 # include <stdlib.h>
+# include <stdbool.h>
 # include "scierie.h"
 # include "caserne.h"
 # include "ressources.h"
@@ -25,5 +26,7 @@
 
     int prodOr(int or);
     void createVillage(S_Village *village);
+    bool addVilToMine(S_Village *Village);
+    bool removeVilFromMine(S_Village *Village);
 
 #endif

@@ -21,19 +21,8 @@ void displayDefaultMine(S_mine *mine)
     printf("Production en or par jour : %d\n", mine->productionOr);
 }
 
-void AddVilToMine(S_mine *mine, S_hotelDeVille *hotelDeVille)
-{
-    mine->villageois++;
-    hotelDeVille->villageois--;
-}
-
-void removeVilFromMine(S_mine *mine, S_hotelDeVille *hotelDeVille)
-{
-    mine->villageois--;
-    hotelDeVille->villageois++;
-}
-
 void collectMine(S_resVillage *ressource, S_mine *mine)
 {
     ressource->orActuel = ressource->orActuel + mine->productionOr;
 }
+

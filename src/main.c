@@ -1,6 +1,7 @@
 #include "village.h"
 #include "display.h"
 
+
 int main()
 {
     S_Village village;
@@ -8,6 +9,8 @@ int main()
     createVillage(&village);
 
     displayFullVillage(&village);
+    
+    printf("%B", addVilToMine(&village));
 
     return 0;
 }
