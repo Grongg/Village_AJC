@@ -1,5 +1,5 @@
-#include "scierie.h"
-#include "ressources.h"
+
+#include "village.h"
 
 void displaySc(S_scierie sc){
 
@@ -17,20 +17,10 @@ void createDefaultScierie(S_scierie *sc){
  sc->ressourceOr = 50;
 
 }
-int UpdateRessourceProdBois(S_resVillage *ressource ,S_scierie *sc){
+void collectScierie(S_resVillage *ressource ,S_scierie *sc){
 
-//ressource->boisActuel=ressource->boisActuel+sc->prodBoisParJour;
-
+ressource->boisActuel=ressource->boisActuel+sc->prodBoisParJour;
 
 
 }
 
-// int main(){
-
-// S_scierie newSC;
-// createDefaultScierie(&newSC);
-// newSC.nbActuelVillageois = 2;
-// displaySc(newSC);
-
-
-// }

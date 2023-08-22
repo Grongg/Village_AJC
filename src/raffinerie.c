@@ -1,4 +1,4 @@
-#include "raffinerie.h"
+#include "village.h"
 
 void displayRaf(S_raffinerie rf){
 
@@ -24,13 +24,10 @@ void createDefaultRaffinerie(S_raffinerie *rf){
 
 }
 
-// int main(){
+void collectRaffinerie(S_resVillage *ressource,S_raffinerie *rf){
 
-//     S_raffinerie newrf;
-//     createDefaultRaffinerie(&newrf);
-    
-//     newrf.nbActuelVillageois=4;
-//     displayRaf(newrf);
+ressource->matNoirActuel = ressource->matNoirActuel + rf->prodMNParJour;
 
-//     return 0;
-// }
+
+}
+
