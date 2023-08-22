@@ -1,6 +1,11 @@
 #include "ressources.h"
 
-void updateOr(S_resVillage *S_resVillage, int or)
+void updateOr(S_resVillage *resVillage, int or)
+{
+    resVillage->orActuel = or;
+}
+
+void update(S_resVillage *resVillage, int or)
 {
     resVillage->orActuel = or;
 }
