@@ -1,9 +1,7 @@
+#ifndef  RAFFINERIE_H
+#define  RAFFINERIE_H
 #include<stdio.h>
 #include<stdlib.h>
-
-#ifndef raffinerie_H
-#define  raffinerie_H
-
 typedef struct{
 
 int nbMaxVillageois ;
@@ -17,4 +15,5 @@ int prodMNParJour ;
 
 void createDefaultRaffinerie(S_raffinerie *rf);
 void displayRaf(S_raffinerie rf);  
+
 #endif

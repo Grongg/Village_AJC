@@ -21,5 +21,4 @@
     void updateOr(S_resVillage *resVillage, int or);
     void printRessources(S_resVillage *resVillage);
 
-
 #endif

@@ -1,11 +1,8 @@
+#ifndef  CASERNE_H
+#define  CASERNE_H
+
 #include<stdio.h>
 #include<stdlib.h>
-
-#ifndef caserne_H
-#define  caserne_H
-
-    
-
 typedef struct{
 int nbMaxVillageois ;
 int nbActuelVillageois;
@@ -17,4 +14,5 @@ int ameliorationSoldatParJour ;
 
 void displayCa(S_caserne ca);
 void createDefaultCaserne(S_caserne *ca);
+
 #endif
