@@ -5,8 +5,6 @@ int main()
     S_Village village;
 
     createVillage(&village);
-    // createDefaultRessources(&village);
- 
     printf("test struture batiment\n");
         S_scierie newSC;
         createDefaultScierie(&newSC);

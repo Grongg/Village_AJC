@@ -1,8 +1,7 @@
-# include "village.h"
-
-# ifndef mine_H
-# define mine_H
-    
+#ifndef MINE_H
+# define MINE_H
+# include <stdio.h>
+# include <stdlib.h>
 typedef struct S_mine
 {
     int villageois;
@@ -11,6 +10,14 @@ typedef struct S_mine
     int villageoisMin;
     int productionOr;
 } S_mine;
+
+void createDefaultMine(S_mine *mine);
+int productionMine(int or);
+void displayDefaultMine(S_mine *mine);
+void AddVilToMine(S_mine *mine, S_hotelDeVille *hotelDeVille);
+void removeVilFromMine(S_mine *mine, S_hotelDeVille *hotelDeVille);
+void collectMine(S_resVillage *ressource, S_mine *mine);
+
 
 # endif
 

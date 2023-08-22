@@ -1,8 +1,7 @@
-# ifndef HOTELDEVILLE_H
+#ifndef HOTELDEVILLE_H
 # define HOTELDEVILLE_H
 # include <stdio.h>
 # include <stdlib.h>
-// # include "village.h"
 typedef struct
 {
     int villageois;
