@@ -16,4 +16,5 @@ void createVillage(S_Village *village)
     village->mine = mine;
     village->nbScirie++;
     village->nbMine++;
+    village->hdv->villageois = 10;
 }
