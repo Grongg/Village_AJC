@@ -14,7 +14,12 @@ void createVillage(S_Village *village)
     village->jour = 0;
     village->scierie = scierie;
     village->mine = mine;
-    village->nbScirie++;
-    village->nbMine++;
+
+    village->nbCaserne = 0;
+    village->nbMine = 1;
+    village->nbRaffinerie = 0;
+    village->nbScirie = 1;
+
     village->hdv->villageois = 10;
+
 }

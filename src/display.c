@@ -4,7 +4,7 @@
 void displayFullVillage(S_Village *v)
 {
     displayVillageInfo(v);
-    displayChoixAction(v);
+    //displayChoixAction(v);
 }
 
 void displayVillageInfo(S_Village *v)
@@ -56,8 +56,22 @@ void displayChoixAction(S_Village *v)
 }
 
 void displayMouvementVillageois(){
-    printf("[1] Deplacer un villageois depuis l'hôtel de ville");
-    printf("[2] Deplacer un villageois vers l'hôtel de ville");
+    int choix;
+    printf("[1] Deplacer un villageois depuis l'hôtel de ville\n");
+    printf("[2] Deplacer un villageois depuis une scirie\n");
+    printf("[3] Deplacer un villageois depuis une mine\n");
+    printf("[4] Deplacer un villageois depuis une raffinerie\n");
+    printf("[5] Deplacer un villageois depuis une caserne\n");
+
+    scanf("%d", choix);
+
+    printf("[1] Envoyer le villageois vers l'hôtel de ville\n");
+    printf("[2] Envoyer le villageois vers une scirie\n");
+    printf("[3] Envoyer le villageois vers une mine\n");
+    printf("[4] Envoyer le villageois vers une raffinerie\n");
+    printf("[5] Envoyer le villageois vers une caserne\n");
+    
+    scanf("%d", choix);
 }
 
 void displayConstruction(){

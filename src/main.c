@@ -7,7 +7,7 @@ int main()
 
     createVillage(&village);
 
-    displayVillageInfo(&village);
+    displayFullVillage(&village);
 
     return 0;
 }
