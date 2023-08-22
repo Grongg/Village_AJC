@@ -20,5 +20,6 @@
     } S_Village  ;
 
     int prodOr(int or);
+    void createVillage(S_Village *village);
 
 #endif

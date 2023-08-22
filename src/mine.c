@@ -18,16 +18,29 @@ int productionMine(int or)
     return or + 50;
 }
 
-int main()
+void createDefaultMine(S_mine *mine)
 {
-    int jourmax = 15;
-    int or = 150;
-    S_mine *mine = malloc(sizeof(S_mine));
-    mine->villageois = 2;
-    defaultMine(mine);
-    or = prodOr(or, jourmax);
-    displayDefaultMine(mine); 
-    printf("Production en or au bout de %d jours : %d\n", jourmax, or);   
-    free(mine);
-    return 0;
+    mine->villageoisMin = 3;
+    mine->coutOr = 100;
+    mine->coutBois = 20;
+    mine->productionOr = 50;
 }
+
+int prodOr(int orActuel)
+{
+    // return orActuel = orActuel + mine->productionOr;
+}
+
+// int main()
+// {
+//     int jourmax = 15;
+//     int or = 150;
+//     S_mine *mine = malloc(sizeof(S_mine));
+//     mine->villageois = 2;
+//     createDefaultMine(mine);
+//     or = prodOr(or, jourmax);
+//     displayDefaultMine(mine); 
+//     printf("Production en or au bout de %d jours : %d\n", jourmax, or);   
+//     free(mine);
+//     return 0;
+// }
