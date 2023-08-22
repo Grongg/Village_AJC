@@ -7,7 +7,7 @@
     
 
 typedef struct{
-int nbMinVillageois ;
+int nbMaxVillageois ;
 int nbActuelVillageois;
 int ressourceOr;
 int ressouceBois;

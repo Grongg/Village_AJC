@@ -2,7 +2,7 @@
 
 void displayRaf(S_raffinerie rf){
 
-printf("Nombre minimun de villageois pour fonctionner est de %d   villageois \n" , rf.nbMinVillageois);
+printf("Nombre maximun de villageois pour fonctionner est de %d   villageois \n" , rf.nbMaxVillageois);
 printf("Cout de fabrication d'une raffinerie est de  %d en  Or , %d en  Bois et de  %d  en matiere noire\n" , rf.ressourceOr,rf.ressouceBois,rf.ressourceMN);
 printf("Nombre courant de villageois est de  %d   villageois \n" , rf.nbActuelVillageois);
 if(rf.nbActuelVillageois<5){
@@ -16,7 +16,7 @@ else {
 }
 
 void createDefaultRaffinerie(S_raffinerie *rf){
- rf->nbMinVillageois=5;
+ rf->nbMaxVillageois=5;
  rf->prodMNParJour = 10;
  rf->ressourceOr = 500;
  rf->ressouceBois =100;
