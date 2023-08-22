@@ -2,6 +2,7 @@
 #define VILLAGE_H
 # include <stdio.h>
 # include <stdlib.h>
+# include "scierie.h"
     
 # include "hotelDeVille.h"
 // # include "mine.h"

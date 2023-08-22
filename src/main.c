@@ -4,6 +4,11 @@
 #include "raffinerie.h"
 int main()
 {
+    #include "ressources.h"
+    S_Village village;
+
+    createDefaultRessources(&village);
+ 
     printf("test struture batiment\n");
         S_scierie newSC;
         createDefaultScierie(&newSC);

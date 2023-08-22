@@ -2,9 +2,7 @@ CC		=	gcc
 
 NAME	=	village
 
-INCLUDE	=	include
-
-CFLAGS	=	-Wall -Wextra -O2 -I$(INCLUDE)
+CFLAGS	=	-Wall -Wextra -O2
 
 SRCS	=	src/main.c \
 			src/village.c
