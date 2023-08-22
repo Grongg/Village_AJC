@@ -1,4 +1,4 @@
-# include "village.h"
+# include "mine.h"
 
 void displayDefaultMine(S_mine *mine)
 {

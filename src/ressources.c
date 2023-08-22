@@ -17,7 +17,7 @@ void addOr(S_resVillage *resVillage, int or)
 
 void removeOr(S_resVillage *resVillage, int or)
 {
-    if (nbVil < 0)
+    if (or < 0)
     {
         printf("Erreur, entrer un chiffre positif svp\n");
         return;
@@ -37,7 +37,7 @@ void addBois(S_resVillage *resVillage, int bois)
 
 void removeBois(S_resVillage *resVillage, int bois)
 {
-    if (nbVil < 0)
+    if (bois < 0)
     {
         printf("Erreur, entrer un chiffre positif svp\n");
         return;
@@ -57,7 +57,7 @@ void addMatNoir(S_resVillage *resVillage, int matNoir)
 
 void removeMatNoir(S_resVillage *resVillage, int matNoir)
 {
-    if (nbVil < 0)
+    if (matNoir < 0)
     {
         printf("Erreur, entrer un chiffre positif svp\n");
         return;

@@ -7,6 +7,11 @@ CFLAGS	=	-Wall -Wextra -O2
 SRCS	=	src/main.c \
 			src/village.c \
 			src/mine.c \
+			src/caserne.c \
+			src/scierie.c \
+			src/hotelDeVille.c \
+			src/ressources.c \
+			src/raffinerie.c
 
 OBJS	=	$(SRCS:.c=.o)
 
