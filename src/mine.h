@@ -15,6 +15,10 @@ void createDefaultMine(S_mine *mine);
 int prodOr(int orActuel);
 int productionMine(int or);
 void displayDefaultMine(S_mine *mine);
+void addVilFromMine(S_mine *mine, S_hotelDeVille *hotelDeVille);
+void removeVilFromMine(S_mine *mine, S_hotelDeVille *hotelDeVille);
+void collectMine(S_resVillage *ressource, S_mine *mine);
+
 
 # endif
 
