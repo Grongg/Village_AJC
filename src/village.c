@@ -7,5 +7,8 @@ void createVillage(S_Village *village)
     createDefaultScierie(&scierie);
     createDefaultMine(&mine);
     village->jour = 0;
-    village->scierie = &scierie;
+    village->scierie[0] = scierie;
+    village->mine[0] = mine;
+    village->nbScirie++;
+    village->nbMine++;
 }
