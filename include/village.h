@@ -11,7 +11,10 @@
     {
         int jour;
         S_resVillage *resVillage;
-        S_hotelDeVille *HDV;
+        S_hotelDeVille *hdv;
+        S_raffinerie *rafinery;
+        S_caserne *caserne;
+        S_scierie *scierie;
     } S_Village  ;
 
     int prodOr(int or);
