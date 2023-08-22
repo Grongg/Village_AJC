@@ -12,7 +12,7 @@
     {
         int jour;
         S_resVillage *resVillage;
-        // S_hotelDeVille *hdv;
+        S_hotelDeVille *hdv;
         int nbRaffinerie;
         S_raffinerie *rafinery;
         int nbCaserne;
