@@ -7,6 +7,7 @@ void createVillage(S_Village *village)
     S_mine* raffinerie = NULL;
     S_mine* caserne = NULL;
     S_resVillage* resVillage = malloc(sizeof(S_resVillage));
+    village->hdv = malloc(sizeof(S_hotelDeVille));
     createDefaultRessources(resVillage);
     createDefaultScierie(scierie);
     createDefaultMine(mine);
