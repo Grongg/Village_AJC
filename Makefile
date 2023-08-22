@@ -5,7 +5,8 @@ NAME	=	village
 CFLAGS	=	-Wall -Wextra -O2
 
 SRCS	=	src/main.c \
-			src/village.c
+			src/village.c \
+			src/mine.c \
 
 OBJS	=	$(SRCS:.c=.o)
 

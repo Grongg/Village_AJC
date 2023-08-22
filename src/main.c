@@ -1,13 +1,11 @@
-#include "ressources.h"
-#include "caserne.h"
-#include "scierie.h"
-#include "raffinerie.h"
+#include "village.h"
+
 int main()
 {
-    #include "ressources.h"
     S_Village village;
 
-    createDefaultRessources(&village);
+    createVillage(&village);
+    // createDefaultRessources(&village);
  
     printf("test struture batiment\n");
         S_scierie newSC;
