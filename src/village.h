@@ -3,11 +3,11 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include "scierie.h"
-    
+# include "caserne.h"
+# include "ressources.h"
+# include "raffinerie.h"
 # include "hotelDeVille.h"
-// # include "mine.h"
-
-    // Mine : production or/jour
+# include "mine.h"
     typedef struct Village
     {
         int jour;
@@ -16,6 +16,7 @@
         S_raffinerie *rafinery;
         S_caserne *caserne;
         S_scierie *scierie;
+        S_mine *mine;
     } S_Village  ;
 
     int prodOr(int or);
