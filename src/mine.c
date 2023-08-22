@@ -37,30 +37,3 @@ void collectMine(S_resVillage *ressource, S_mine *mine)
 {
     ressource->orActuel = ressource->orActuel + mine->productionOr;
 }
-
-// int main()
-// {
-//     int jourmax = 15;
-//     int or = 150;
-//     S_mine *mine = malloc(sizeof(S_mine));
-//     mine->villageois = 2;
-//     createDefaultMine(mine);
-//     or = prodOr(or, jourmax);
-//     displayDefaultMine(mine); 
-//     printf("Production en or au bout de %d jours : %d\n", jourmax, or);   
-//     free(mine);
-//     return 0;
-// }
-
-// int main()
-// {
-//     S_resVillage *ressource = malloc(sizeof(S_resVillage));
-//     S_mine *mine = malloc(sizeof(S_mine));
-//     ressource->orActuel = 100;
-//     createDefaultMine(mine);
-//     collectMine(ressource, mine);
-//     printf("ressource or actuel : %d\n", ressource->orActuel);
-//     free(ressource);
-//     free(mine);
-//     return 0;
-// }
