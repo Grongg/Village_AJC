@@ -13,9 +13,13 @@
         int jour;
         S_resVillage *resVillage;
         S_hotelDeVille *hdv;
+        int nbRaffinerie;
         S_raffinerie *rafinery;
+        int nbCaserne;
         S_caserne *caserne;
+        int nbScirie;
         S_scierie *scierie;
+        int nbMine;
         S_mine *mine;
     } S_Village  ;
 
