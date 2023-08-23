@@ -51,3 +51,47 @@ bool addVilToMine(S_Village *Village)
     }
     return false;
 }
+
+int nbTotalVillageoisMines(S_mine *mines,S_Village *village){
+  
+  int nbTotalVillageoisMines=0;
+  int nbTotalMines=village->nbMine;
+  printf(" int nbTotalMines=village->nbMine; %d\n",nbTotalMines);
+    for (int i =0; i<nbTotalMines;i++){
+      printf("%d\n",mines[i].villageois);
+       nbTotalVillageoisMines = nbTotalVillageoisMines + mines[i].villageois;
+
+    }
+return nbTotalVillageoisMines;
+};
+
+int nbTotalVillageoisScieries(S_scierie *scieries,S_Village *village){
+  int nbTotalVillageoisScieries=0;
+  int nbTotalScieries=village->nbScirie;
+    for (int i =0; i<nbTotalScieries;i++){
+       nbTotalVillageoisScieries =nbTotalVillageoisScieries+scieries[i].nbActuelVillageois;
+
+    }
+return nbTotalVillageoisScieries;
+};
+
+int nbTotalVillageoisRaffineries(S_raffinerie *raffineries,S_Village *village){
+  int nbTotalVillageoisRaffineries=0;
+  int nbTotalRaffineries=village->nbRaffinerie;
+    for (int i =0; i<nbTotalRaffineries;i++){
+       nbTotalVillageoisRaffineries =nbTotalVillageoisRaffineries+raffineries[i].nbActuelVillageois;
+
+    }
+return nbTotalVillageoisRaffineries;
+};
+
+int nbTotalVillageoisCasernes(S_caserne *casernes,S_Village *village){
+  int nbTotalVillageoisCasernes=0;
+  int nbTotalCasernes=village->nbCaserne;
+    for (int i =0; i<nbTotalCasernes;i++){
+      nbTotalVillageoisCasernes =nbTotalVillageoisCasernes+casernes[i].nbActuelVillageois;
+
+    }
+return  nbTotalVillageoisCasernes;
+};
+
